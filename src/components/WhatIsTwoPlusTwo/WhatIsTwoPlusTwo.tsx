@@ -8,9 +8,9 @@ const WhatIsTwoPlusTwo: React.FC<WhatIsTwoPlusTwoProps> = ({ whatIsTwoPlusTwo, o
   return (
     <>
         <label htmlFor='whatIsTwoPlusTwo'>What is 2 + 2?</label>
-        <select value={whatIsTwoPlusTwo} onChange={onChangeWhatIsTwoPlusTwo}>
-        <option value="4">4</option>
-        <option value="Not 4">Not 4</option>
+        <select data-testid="maths-question" value={whatIsTwoPlusTwo} onChange={onChangeWhatIsTwoPlusTwo}>
+        <option id="4" value="4">4</option>
+        <option id="Not 4" value="Not 4">Not 4</option>
         </select>
     </> );
 };
