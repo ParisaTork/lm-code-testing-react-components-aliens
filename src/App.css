@@ -1,3 +1,7 @@
+* {
+	cursor: url('resources/neon.png'), pointer;
+}
+
 body {
 	font-family: "Space Mono", monospace;
 	line-height: 1.5;
