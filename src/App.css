@@ -1,12 +1,118 @@
-:root {
-	--light: #fdf8e5;
-}
-
 body {
-	background-color: var(--light);
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Space Mono", monospace;
 	line-height: 1.5;
 	display: flex;
 	justify-content: center;
 	margin: 0;
+	background-image: url("https://i.imgur.com/6vt7kEI.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
 }
+
+input,
+textarea {
+	margin: 0 auto;
+	width: 100%;
+	padding: 0.5em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: white;
+}
+
+form {
+	width: 100%;
+	max-width: 500px;
+	padding: 1em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: white;
+	margin: 0 auto;
+}
+
+input,
+textarea,
+button {
+	margin-bottom: 1em;
+}
+
+h1 {
+	text-align: center;
+	color: white;
+	font-family: "Space Mono", monospace;
+	font-size: 3em;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+}
+
+ul {
+	text-align: center;
+	color: white;
+	font-size: 1.5em;
+}
+
+ul li {
+	list-style: none;
+}
+
+input {
+	width: 100%;
+	max-width: 450px;
+}
+
+button {
+	margin: 0 auto;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+	h1 {
+		font-size: 2em;
+	}
+
+	ul {
+		font-size: 1em;
+	}
+
+	form {
+		width: 100%;
+		max-width: 100%;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+
+	input {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+input,
+option,
+textarea,
+select {
+	width: 100%;
+	max-width: 450px;
+	-ms-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box; 
+	box-sizing:content-box;
+	padding: 10px;
+	border-width:5px;
+	border-color: lightgray;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+option::-webkit-input-placeholder {
+	font-family: "Space Mono", monospace;
+}
+
+
+
+
+
+
