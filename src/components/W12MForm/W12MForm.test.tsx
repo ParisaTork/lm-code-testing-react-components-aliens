@@ -103,10 +103,11 @@ describe('W12MForm Tests - Enzyme', () => {
     expect(wrapper.find(ReasonForSparing).length).toBe(1)
   })
   
+  // change if reset button added again
   test('W12MForm includes html elements', () => {
     expect(wrapper.find('div').length).toEqual(1);
     expect(wrapper.find('form').length).toEqual(1);
-    expect(wrapper.find('button').length).toEqual(2);
+    expect(wrapper.find('button').length).toEqual(1);
     expect(wrapper.find('p').length).toEqual(1);
   });
 });
