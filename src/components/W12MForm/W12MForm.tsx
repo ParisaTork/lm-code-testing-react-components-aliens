@@ -51,9 +51,8 @@ const W12MForm: React.FC<formProps> = ({ saveData }) => {
 			<NumberOfBeings numberOfBeings={numberOfBeings} onChangeNumberOfBeings={(event : any) => setNumberOfBeings(event.target.value)}/>
 			<WhatIsTwoPlusTwo whatIsTwoPlusTwo={answer} onChangeWhatIsTwoPlusTwo={(event : any) => setAnswer(event.target.value)}/>
 			<ReasonForSparing reasonForSparing={reasonForSparing} onChangeReasonForSparing={(event : any) => setReasonForSparing(event.target.value)}/>
-			<button type="submit" data-testid="submit" className="btn">Submit</button>
-			<button type="reset" className="btn" onClick={resetForm}>Reset</button>
-            <p>{formData ? `Your answers were: ${speciesName}, ${planetName}, ${numberOfBeings}, ${answer}, ${reasonForSparing}. Your planet will not be spared! Resistance is useless!` : ''}</p>
+			<button type="submit" className="btn">Submit</button>
+			<p>{formData}</p>
 		</form>
 		</div>
 	);
