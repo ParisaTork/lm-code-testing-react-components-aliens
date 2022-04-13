@@ -105,11 +105,16 @@ select {
 	border-color: lightgray;
 }
 
+input,
+textarea,
+select,
+option,
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder,
 option::-webkit-input-placeholder {
 	font-family: "Space Mono", monospace;
 }
+
 
 
 
