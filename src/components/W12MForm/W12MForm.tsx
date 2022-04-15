@@ -34,14 +34,6 @@ const W12MForm: React.FC<formProps> = ({ saveData }) => {
 		console.log(`This form has been submitted: ${isSubmitted}`);
 	}
 
-	const resetForm = () => {
-		setSpeciesName('');
-		setPlanetName('');
-		setNumberOfBeings('');
-		setReasonForSparing('');
-		setAnswer('');
-	}
-
 	return (
 		<div>
 		<W12MHeader />
