@@ -66,10 +66,24 @@ input {
 
 button {
 	margin: 0 auto;
+	width: 96%;
+	padding: 0.5em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background-color: #ccc;
+	font-size: 1.5em;
+	font-family: "Space Mono", monospace;
 }
 
 button:hover {
 	cursor: pointer;
+}
+
+/* make button responsive */
+@media screen and (max-width: 500px) {
+	button {
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 500px) {
