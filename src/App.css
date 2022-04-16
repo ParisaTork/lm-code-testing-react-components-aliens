@@ -37,12 +37,14 @@ form {
 
 select {
 	border-radius: 4px;
+	margin-top: 0.5em;
 	margin-bottom: 1em;
 }
 
 input,
 textarea,
 button {
+	margin-top: 0.5em;
 	margin-bottom: 1em;
 }
 
