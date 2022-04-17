@@ -75,6 +75,15 @@ input:hover {
 	cursor: pointer;
 }
 
+select:hover {
+	cursor: pointer;
+}
+
+textarea:hover {
+	cursor: pointer;
+}
+
+
 button {
 	margin: 0 auto;
 	width: 96%;
