@@ -71,6 +71,10 @@ input {
 	max-width: 450px;
 }
 
+input:hover {
+	cursor: pointer;
+}
+
 button {
 	margin: 0 auto;
 	width: 96%;
