@@ -46,6 +46,7 @@ const W12MForm: React.FC<formProps> = ({ saveData }) => {
 			<button type="submit" data-testid="submit" className="btn">Submit</button>
 			<p>{formData}</p>
 		</form>
+		<h5>Alien Corp © 2022 All Rights Reserved</h5>
 		</div>
 	);
 };

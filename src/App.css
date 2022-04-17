@@ -56,6 +56,14 @@ h1 {
 	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
 }
 
+h5 {
+	text-align: center;
+	color: white;
+	font-family: "Space Mono", monospace;
+	font-size: 1em;
+	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+}
+
 ul {
 	text-align: center;
 	color: white;
