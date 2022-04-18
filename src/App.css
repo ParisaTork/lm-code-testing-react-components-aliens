@@ -25,6 +25,12 @@ body {
 	background-position: center;
 	z-index: 1;
 	font-family: "Space Mono", monospace;
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+	border-top: 0;
+	border-left: 0;
+	border-bottom-right-radius: 80%;
 }
 
 #pause {
@@ -37,6 +43,12 @@ body {
 	background-position: center;
 	z-index: 1;
 	font-family: "Space Mono", monospace;
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #fff;
+	border-top: 0;
+	border-right: 0;
+	border-bottom-left-radius: 80%;
 }
 
 input,
