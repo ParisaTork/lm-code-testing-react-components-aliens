@@ -30,7 +30,7 @@ body {
 	border: 1px solid #fff;
 	border-top: 0;
 	border-left: 0;
-	border-bottom-right-radius: 80%;
+	border-bottom-right-radius: 70%;
 }
 
 #pause {
@@ -48,7 +48,7 @@ body {
 	border: 1px solid #fff;
 	border-top: 0;
 	border-right: 0;
-	border-bottom-left-radius: 80%;
+	border-bottom-left-radius: 70%;
 }
 
 input,
