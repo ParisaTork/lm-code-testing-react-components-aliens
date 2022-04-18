@@ -51,6 +51,16 @@ body {
 	border-bottom-left-radius: 70%;
 }
 
+.error {
+	color: red;
+	font-size: 0.75em;
+	margin: 0 auto;
+	padding-bottom: 1em;
+	text-align: left;
+	display: block;
+	margin-right: 1em;
+}
+
 input,
 textarea {
 	margin: 0 auto;
@@ -81,7 +91,7 @@ input,
 textarea,
 #submit {
 	margin-top: 0.5em;
-	margin-bottom: 1em;
+	margin-bottom: 0.5em;
 }
 
 h1 {
