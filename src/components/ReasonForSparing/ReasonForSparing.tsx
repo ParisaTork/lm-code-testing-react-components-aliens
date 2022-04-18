@@ -11,7 +11,6 @@ const ReasonForSparing: React.FC<ReasonForSparingProps> = ({ reasonForSparing, o
   const [ errorMessage, setErrorMessage ] = useState<string | undefined>('');
 
   const validate : (value : string) => string | undefined = (value) => {
-    // regex must be between 17 and 153 characters
     const regex = /^.{17,153}$/;
     if (regex.test(value) === false) {
       return "Error: Reason for Sparing must be between 17 and 153 characters.";
