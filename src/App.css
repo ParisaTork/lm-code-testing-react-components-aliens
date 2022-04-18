@@ -15,6 +15,32 @@ body {
 	background-attachment: fixed;
 }
 
+#play {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 50px;
+	height: 50px;
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 1;
+	font-family: "Space Mono", monospace;
+}
+
+#pause {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 1;
+	font-family: "Space Mono", monospace;
+}
+
 input,
 textarea {
 	margin: 0 auto;
@@ -43,7 +69,7 @@ select {
 
 input,
 textarea,
-button {
+#submit {
 	margin-top: 0.5em;
 	margin-bottom: 1em;
 }
@@ -62,6 +88,7 @@ h5 {
 	font-family: "Space Mono", monospace;
 	font-size: 1em;
 	text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+	padding-bottom: 50px;
 }
 
 ul {
@@ -92,7 +119,7 @@ textarea:hover {
 }
 
 
-button {
+#submit {
 	margin: 0 auto;
 	width: 96%;
 	padding: 0.5em;
@@ -130,7 +157,7 @@ button:hover {
 		max-width: 90 !important;
 	}
 
-	button {
+	#submit {
 		width: 100%;
 	}
 }
