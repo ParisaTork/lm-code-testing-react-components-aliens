@@ -57,25 +57,55 @@ describe("Species Name Tests", () => {
 
     // 3. Does each input field call its onChange function and pass it the correct parameters?
     test('input field passes onChange the correct parameters', async () => {
-        render(<SpeciesName />);
+        const mockOnChangeSpeciesName = jest.fn();
+        const speciesNameProps = {
+            onChangeSpeciesName: mockOnChangeSpeciesName
+        }
+        render(<SpeciesName {...speciesNameProps} />);
         const speciesNameInput = screen.getByPlaceholderText(/Enter a species name/i);
         await userEvent.type(speciesNameInput, 'dog');
         expect(speciesNameInput.value).toBe('dog');
     });
 
-    describe('Species Name Tests - Enzyme', () => {
-        let mockonChangeSpeciesName = jest.fn();
-        let SpeciesNameProps = {"speciesName":"","onChangeSpeciesName":"mockonChangeSpeciesName"};
-        
-        const wrapper = shallow(<SpeciesName {...SpeciesNameProps} />);
-        
-        test('SpeciesName includes html elements', () => {
-          expect(wrapper.find('label').length).toEqual(1);
-          expect(wrapper.find('input').length).toEqual(1);
-        });
-      
-        test('SpeciesName includes correct html innerText', () => {
-          expect(wrapper.find('label').text()).toEqual("Species Name");
-        }); 
-      });
+    test('test for no error message when valid data is entered', async () => {
+        const mockOnChangeSpeciesName = jest.fn();
+        const speciesNameProps = {
+            onChangeSpeciesName: mockOnChangeSpeciesName
+        }
+        render(<SpeciesName {...speciesNameProps} />);
+        const speciesNameInput = screen.getByPlaceholderText(/Enter a species name/i);
+        await userEvent.type(speciesNameInput, 'dog');
+        expect(screen.queryByText(/Error: Species Name must be between 3 and 23 characters and can only contain letters./i)).not.toBeInTheDocument();
+    });
+
+    test('test for error message when invalid data is entered', async () => {
+        const mockOnChangeSpeciesName = jest.fn();
+        const speciesNameProps = {
+            onChangeSpeciesName: mockOnChangeSpeciesName
+        }
+        render(<SpeciesName {...speciesNameProps} />);
+        const speciesNameInput = screen.getByPlaceholderText(/Enter a species name/i);
+        await userEvent.type(speciesNameInput, 'd');
+        expect(screen.queryByText(/Error: Species Name must be between 3 and 23 characters and can only contain letters./i)).toBeInTheDocument();
+    });
 });
+
+describe('Species Name Tests - Enzyme', () => {
+    const mockOnChangeSpeciesName = jest.fn();
+    const speciesNameProps = {
+        speciesName: 'human',
+        onChangeSpeciesName: mockOnChangeSpeciesName
+    }
+    
+    const wrapper = shallow(<SpeciesName {...speciesNameProps} />);
+    
+    test('SpeciesName includes html elements', () => {
+        expect(wrapper.find('label').length).toEqual(1);
+        expect(wrapper.find('input').length).toEqual(1);
+    });
+    
+    test('SpeciesName includes correct html innerText', () => {
+        expect(wrapper.find('label').text()).toEqual("Species Name");
+    }); 
+});
+
