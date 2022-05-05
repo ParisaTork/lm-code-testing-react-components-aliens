@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/lm-code-testing-react-components-aliens/static/css/main.c83f60d9.chunk.css",
+    "main.js": "/lm-code-testing-react-components-aliens/static/js/main.18259756.chunk.js",
+    "main.js.map": "/lm-code-testing-react-components-aliens/static/js/main.18259756.chunk.js.map",
+    "runtime-main.js": "/lm-code-testing-react-components-aliens/static/js/runtime-main.04ba410f.js",
+    "runtime-main.js.map": "/lm-code-testing-react-components-aliens/static/js/runtime-main.04ba410f.js.map",
+    "static/js/2.8c2b6b04.chunk.js": "/lm-code-testing-react-components-aliens/static/js/2.8c2b6b04.chunk.js",
+    "static/js/2.8c2b6b04.chunk.js.map": "/lm-code-testing-react-components-aliens/static/js/2.8c2b6b04.chunk.js.map",
+    "static/js/3.ab2b09cd.chunk.js": "/lm-code-testing-react-components-aliens/static/js/3.ab2b09cd.chunk.js",
+    "static/js/3.ab2b09cd.chunk.js.map": "/lm-code-testing-react-components-aliens/static/js/3.ab2b09cd.chunk.js.map",
+    "index.html": "/lm-code-testing-react-components-aliens/index.html",
+    "static/css/main.c83f60d9.chunk.css.map": "/lm-code-testing-react-components-aliens/static/css/main.c83f60d9.chunk.css.map",
+    "static/js/2.8c2b6b04.chunk.js.LICENSE.txt": "/lm-code-testing-react-components-aliens/static/js/2.8c2b6b04.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/lm-code-testing-react-components-aliens/static/media/star.37e8dfe6.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.04ba410f.js",
+    "static/js/2.8c2b6b04.chunk.js",
+    "static/css/main.c83f60d9.chunk.css",
+    "static/js/main.18259756.chunk.js"
+  ]
+}
