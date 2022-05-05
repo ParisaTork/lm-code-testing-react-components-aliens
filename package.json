@@ -1,5 +1,6 @@
 {
-  "name": "learner-materials-intro-to-react",
+  "name": "lm-code-testing-react-components-aliens",
+  "homepage": "https://ParisaTork.github.io/lm-code-testing-react-components-aliens/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,7 +14,6 @@
     "@types/react-dom": "^17.0.11",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.6",
-    "gh-pages": "^3.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-lottie": "^1.2.3",
@@ -22,6 +22,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build babel src -d out",
     "test": "react-scripts test",
@@ -49,6 +51,7 @@
     "@testing-library/dom": "^8.13.0",
     "@testing-library/user-event": "^14.0.4",
     "@types/react-lottie": "^1.2.6",
+    "gh-pages": "^3.2.3",
     "jest-canvas-mock": "^2.3.1"
   }
 }
